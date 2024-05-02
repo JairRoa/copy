@@ -1,0 +1,1101 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body{
+  overflow-x: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Alata', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilos para el header */
+.contenedor-header {
+  zoom: 1.5;
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.contenedor-header header .logo a {
+  font-family: 'Alata', sans-serif;
+  font-size: 36px;
+  color: #4169e1;
+  text-decoration: none;
+}
+.contenedor-header header .logo img {
+  width: 5em; /* Establece el ancho del logo en 8em */
+  height: auto; /* Permite que la altura del logo se ajuste automáticamente según el ancho */
+  margin-top: 20px;
+}
+
+.contenedor-header header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contenedor-header header nav ul li a {
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+  color: #4169e1;
+}
+.nav-responsive {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+/*menu*/
+.contenedor-header {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  height: 70px; /* Define una altura específica para el header */
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.contenedor-header header {
+  max-width: 1100px;
+  height: 100%; /* Ajusta la altura del header al 100% */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Elimina el padding vertical */
+}
+
+.contenedor-header header .logo a {
+  font-family: 'Alata', sans-serif;if;
+  font-size: 36px;
+  color: #4169e1;
+  text-decoration: none;
+}
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+  color: #4169e1;
+}
+.nav-responsive {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+nav ul li a.active {
+  display: none;
+}
+
+/*inicio*/
+.inicio {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(img/social-media.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.inicio .contenido-banner {
+  zoom: 1.5;
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 40px;
+  margin-top: 100px;
+}
+.inicio .contenido-banner img {
+  margin-top: 40px;
+  border: 3px solid #4169e1;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
+}
+.inicio .contenido-banner h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: 'Alata', sans-serif;a, Verdana, sans-serif;
+}
+.inicio .contenido-banner h2 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.inicio .contenido-banner .redes a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.inicio .contenido-banner .redes a:hover {
+  background-color: #4169e1;
+}
+
+/*quien soy*/
+.quien {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+.quien .contenido-quien {
+  zoom: 1.5;
+  max-width: 1100px;
+  margin: 30px auto;
+  text-align: justify;
+}
+.quien h2 {
+  font-size: 48px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.quien .contenido-quien p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.quien .contenido-quien p span {
+  color: #91a8ee;
+  font-weight: bold;
+  font-style: italic;
+}
+.quien .fila {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.quien .fila .col {
+  width: 50%; /* Ocupa el 50% del ancho del contenedor padre */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  padding: 0 15px; /* Espaciado interno */
+}
+
+.quien .fila .col h3 {
+  font-size: 2vw; /* Utiliza una unidad relativa para el tamaño de fuente */
+  font-family: 'Alata', sans-serif;
+  margin-bottom: 2.5vw; /* Utiliza una unidad relativa para el margen inferior */
+  text-align: center;
+}
+
+.quien .fila .col ul {
+  list-style: none;
+  padding-left: 0; /* Elimina el espacio inicial de la lista */
+}
+
+.quien .fila .col ul li {
+  margin: 1.2vw 0; /* Utiliza una unidad relativa para el margen */
+}
+
+.quien .fila .col ul li strong {
+  display: inline-block;
+  color: #91a8ee;
+  width: 20%; /* Utiliza una unidad relativa para el ancho */
+  justify-content: center;
+}
+
+.quien .fila .col ul li span {
+  background-color: #4169e1;
+  padding: 0.5vw; /* Utiliza una unidad relativa para el padding */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.quien .fila .col .contenedor-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quien .fila .col .contenedor-intereses .intereses {
+  width: 20vw; /* Utiliza una unidad relativa para el ancho */
+  height: 20vw; /* Utiliza una unidad relativa para la altura */
+  font-size: 1.5vw; /* Utiliza una unidad relativa para el tamaño de fuente */
+  text-align: center;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 2.5vw 2.5vw 0; /* Utiliza una unidad relativa para el margen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.quien .fila .col .contenedor-intereses .intereses:hover {
+  background-color: #4169e1;
+}
+
+.quien .fila .col .contenedor-intereses .intereses i {
+  font-size: 2vw; /* Utiliza una unidad relativa para el tamaño de fuente */
+  margin-bottom: 1vw; /* Utiliza una unidad relativa para el margen inferior */
+}
+
+@media (min-width: 900px) {
+  .quien .fila .col .contenedor-intereses .intereses {
+    width: calc(25% - 1vw); /* Utiliza el 25% del ancho del contenedor padre, con un pequeño margen entre los elementos */
+    height: 10vw; /* Reduciendo la altura para mantener la proporción */
+    font-size: .9vw; /* Reduciendo el tamaño de la fuente */
+    margin: 0 .5vw .5vw 0; /* Mantiene el margen */
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .quien .fila {
+    flex-direction: column; /* Apila las columnas verticalmente */
+  }
+
+  .quien .fila .col {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Espaciado entre las columnas */
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+
+  .quien .fila .col .contenedor-intereses {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Espaciado entre los contenedores de intereses */
+    display: flex; /* Utiliza flexbox para centrar los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .quien .fila .col h3 {
+    font-size: 4vw; /* Tamaño de fuente relativo */
+    text-align: center; /* Centra el título */
+  }
+}
+
+
+.quien button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.quien button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #4169e1;
+  z-index: -1;
+  transition: 0.5s;
+}
+.quien button:hover .overlay {
+  width: 100%;
+}
+
+/*habilidades*/
+
+.skills {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 5% 5vw; /* Ajusta el padding para que sea proporcional al tamaño de la pantalla */
+}
+
+.skills .contenido-seccion {
+  max-width: 100%; /* Establece el ancho máximo al 100% para que se adapte al tamaño de la pantalla */
+  margin: 30px auto;
+}
+
+.skills h2 {
+  font-size: 4vw; /* Utiliza unidades de viewport width (vw) para el tamaño de fuente */
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.skills .fila {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten automáticamente en filas en pantallas pequeñas */
+}
+
+.skills .fila .col {
+  width: 50%; /* Establece el ancho de las columnas al 50% para mantener dos columnas */
+  padding: 0 2%; /* Ajusta el padding para que sea proporcional al tamaño de la pantalla */
+}
+
+.skills .fila .col h3 {
+  font-size: 3vw; /* Utiliza unidades de viewport width (vw) para el tamaño de fuente */
+  font-family: 'Alata', sans-serif;
+  margin-bottom: 2vw; /* Utiliza unidades de viewport width (vw) para el margen inferior */
+}
+
+.skills .skill > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1vw; /* Utiliza unidades de viewport width (vw) para el margen inferior */
+}
+
+.skills .skill .barra-skill {
+  height: 0.8vw; /* Utiliza unidades de viewport width (vw) para la altura de la barra de habilidad */
+  width: 100%; /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 2vw; /* Utiliza unidades de viewport width (vw) para el margen inferior */
+}
+
+.skills .skill .progreso {
+  background-image: linear-gradient(to right, #ff0000, #00ff15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* Establece la altura al 100% para que se adapte dinámicamente */
+}
+
+.skills .skill .barra-skill span {
+  position: absolute;
+  height: 3vw; /* Utiliza unidades de viewport width (vw) para el tamaño */
+  width: 3vw; /* Utiliza unidades de viewport width (vw) para el tamaño */
+  background-color: #4169e1;
+  border-radius: 50%;
+  line-height: 3vw; /* Utiliza unidades de viewport width (vw) para el tamaño */
+  text-align: center;
+  top: -1vw; /* Utiliza unidades de viewport width (vw) para el posicionamiento */
+  right: -1.5vw; /* Utiliza unidades de viewport width (vw) para el posicionamiento */
+  font-size: 1.2vw; /* Utiliza unidades de viewport width (vw) para el tamaño de fuente */
+}
+
+/* Media query para pantallas con un ancho máximo de 700px */
+@media (max-width: 700px) {
+  .skills .fila .col {
+    width: 100%; /* Cambia el ancho de las columnas al 100% para que ocupen todo el ancho en pantallas pequeñas */
+    padding: 0; /* Elimina el padding en pantallas pequeñas */
+  }
+}
+
+
+/* movimiento de barras en javascript */
+.skills .skill .edicion {
+  width: 0%;
+  animation: 2s edicion forwards;
+}
+@keyframes edicion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skills .skill .javascript {
+  width: 0%;
+  animation: 2s javascript forwards;
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.skills .skill .copy {
+  width: 0%;
+  animation: 2s copy forwards;
+}
+@keyframes copy {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.skills .skill .equipo {
+  width: 0%;
+  animation: 2s equipo forwards;
+}
+@keyframes equipo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.skills .skill .innovacion {
+  width: 0%;
+  animation: 2s innovacion forwards;
+}
+@keyframes innovacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.skills .skill .atencion {
+  width: 0%;
+  animation: 2s atencion forwards;
+}
+@keyframes atencion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+/*historias*/
+.historia {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+.historia .contenido-seccion {
+  zoom: 1.5;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+.historia h2 {
+  font-size: 48px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.historia .contenido-seccion p {
+  font: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.historia .col {
+  display: flex; /* Añadido para ubicar los contenedores horizontalmente */
+  justify-content: space-between; /* Ajusta el espacio entre los contenedores */
+  flex-wrap: wrap; /* Permite que los contenedores se envuelvan a una nueva línea */
+  text-align: justify;
+}
+.historia .contenedor-intereses {
+  width: calc(50% - 10px); /* Establece el ancho a 50% para dos columnas y ajusta el margen */
+  margin-bottom: 10px; /* Reducir el espacio entre los contenedores verticalmente */
+  float: left; /* Permitir que los contenedores floten uno al lado del otro */
+  box-sizing: border-box; /* Ajusta el modelo de caja para incluir el padding y el borde en el ancho total */
+  padding: 5px; /* Reducir el espaciado interno */
+}
+
+.historia .contenedor-intereses a {
+  font-size: 16px; /* Tamaño de fuente base */
+  padding: 5px; /* Espaciado interno */
+  display: block; /* Convertir en elementos de bloque para ocupar todo el ancho disponible */
+  text-align: center; /* Centrar el texto */
+  text-decoration: none; /* Quitar subrayado de enlaces */
+}
+
+.historia h3 {
+  font-size: 28px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Media query para pantallas con un ancho máximo de 700px */
+@media (max-width: 700px) {
+  .historia .contenedor-intereses {
+    width: calc(100% - 20px); /* Cambia el ancho a 100% para que los contenedores se ubiquen en una sola fila */
+    margin-bottom: 20px; /* Añadido para espaciar los contenedores verticalmente */
+    display: flex; /* Utiliza flexbox para centrar los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Envuelve los elementos en varias filas si es necesario */
+  }
+
+  .historia .contenedor-intereses a {
+    font-size: 80%; /* Disminuir el tamaño de la fuente al 80% */
+  }
+
+  .historia h3 {
+    font-size: 24px; /* Disminuir el tamaño del título */
+  }
+}
+/* Media query para pantallas con un ancho mínimo de 1000px */
+@media (min-width: 1269px) {
+  .historia .contenedor-intereses {
+    width: calc(25% - 10px); /* Establece el ancho a 33.33% para tres columnas y resta el margen */
+  }
+}
+
+
+.historia .contenido-seccion .contenedor-intereses .seguridad {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  background: linear-gradient(rgba(28, 38, 47, 0.7), rgba(28, 38, 47, 0.7)),
+    url("img/racoon.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.historia .contenido-seccion .contenedor-intereses .seguridad:hover {
+  background: linear-gradient(rgba(0, 136, 255, 0.7), rgba(0, 136, 255, 0.7)),
+    url("img/racoon.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transform: scale(1.1);
+}
+
+.historia .contenido-seccion .contenedor-intereses .citas {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  background: linear-gradient(rgba(28, 38, 47, 0.7), rgba(28, 38, 47, 0.7)),
+    url("img/cita.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.historia .contenido-seccion .contenedor-intereses .citas:hover {
+  background: linear-gradient(rgba(0, 136, 255, 0.7), rgba(0, 136, 255, 0.7)),
+    url("img/cita.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transform: scale(1.1);
+}
+.historia .contenido-seccion .contenedor-intereses .paginas {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  background: linear-gradient(rgba(28, 38, 47, 0.7), rgba(28, 38, 47, 0.7)),
+    url("img/webpage.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.historia .contenido-seccion .contenedor-intereses .paginas:hover {
+  background: linear-gradient(rgba(0, 136, 255, 0.7), rgba(0, 136, 255, 0.7)),
+    url("img/webpage.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transform: scale(1.1);
+}
+.historia .contenido-seccion .contenedor-intereses .empleo {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  background: linear-gradient(rgba(28, 38, 47, 0.7), rgba(28, 38, 47, 0.7)),
+    url("img/fila.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.historia .contenido-seccion .contenedor-intereses .empleo:hover {
+  background: linear-gradient(rgba(0, 136, 255, 0.7), rgba(0, 136, 255, 0.7)),
+    url("img/fila.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transform: scale(1.1);
+}
+
+/*TRABAJOS*/
+
+.trabajos {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 50px 20px;
+}
+.trabajos .contenido-seccion {
+  zoom: 1.5;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+.trabajos h2 {
+  font-size: 48px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.trabajos h3 {
+  font-size: 18px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-style: italic;
+  padding: 20px 0;
+}
+.trabajos p {
+  font-size: 16px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*VIDEO*/
+.galeria-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: calc(
+    50% - 10px
+  ); /* Ajusta el ancho de las columnas según tu preferencia */
+  margin: 5px;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.videos video {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el botón de reproducción */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%; /* Utilizamos un porcentaje del ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  background: #4169e1;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 182, 152, 0.1),
+    rgba(0, 255, 204, 0.7)
+  );
+  transition: opacity 0.3s ease;
+}
+
+/* Ícono del botón de reproducción */
+.fa-circle-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw; /* Utilizamos un tamaño relativo */
+  color: #4169e1;
+}
+
+/* Pseudo-clase hover para el botón de reproducción */
+.play-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*FOTOS*/
+.container {
+  width: 57vw; /* Ancho del contenedor del 50% del ancho del viewport */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Media query para dispositivos con una pantalla de máximo 700px */
+@media (max-width: 700px) {
+  .container {
+    width: 50vw;
+  }
+  .container .slide img {
+    width: 30%;
+    height: auto;
+  }
+  .container .slide-track {
+    animation: scroll 100s linear infinite; 
+    -webkit-animation: scroll 100s linear infinite; 
+  }
+  .container .slide-track {
+    display: flex;
+    animation: scroll 100s linear infinite; /* Sin retraso */
+    -webkit-animation: scroll 100s linear infinite; /* Sin retraso */
+    width: calc(820px * 16); /* Ancho de la pista igual a la suma de las imágenes */
+    transform: translateX(100%); /* Comienza en la última imagen */
+    -webkit-transform: translateX(100%); /* Comienza en la última imagen */
+  }/* Animación de desplazamiento */
+  @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); /* Finaliza en la última imagen */
+      }
+  }
+
+  @-webkit-keyframes scroll {
+      0% {
+        -webkit-transform: translateX(0);
+      }
+      100% {
+        -webkit-transform: translateX(-100%); /* Finaliza en la última imagen */
+      }
+  }
+}
+
+.container .slide-track {
+  display: flex;
+  animation: scroll 100s linear infinite; /* Sin retraso */
+  -webkit-animation: scroll 100s linear infinite; /* Sin retraso */
+  width: calc(320px * 16); /* Ancho de la pista igual a la suma de las imágenes */
+  transform: translateX(0); /* Comienza en la última imagen */
+  -webkit-transform: translateX(0); /* Comienza en la última imagen */
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Finaliza en la última imagen */
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%); /* Finaliza en la última imagen */
+  }
+}
+
+
+.container .slide {
+  width: calc(50vw / 3); /* Ancho de cada slide al 16.66% del ancho del viewport */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    /* La velocidad se reduce en un 10% */
+    -webkit-transform: translateX(calc(-320px * 15)); /* Cambio de -320px * 15 a -320px * 14 */
+    transform: translateX(calc(-320px * 15)); /* Cambio de -320px * 15 a -320px * 14 */
+  }
+}
+
+/*contacto*/
+.contacto {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(img/contactBG.png);
+  background-size: cover; /* Ajusta el tamaño para cubrir completamente el área */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.contacto .contenido-seccion {
+  zoom: 1.5;
+  margin-top: 50px;
+  max-width: 1100px;
+}
+.contacto h2 {
+  font-size: 48px;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.contacto .fila {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+.contacto form {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenido a columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+.contacto .col {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+.contacto .col input,
+.contacto .col textarea {
+  display: block;
+  width: calc(100% - 24px); /* Reducir el ancho para dar espacio al padding */
+  padding: 8px; /* Reducir el padding para hacer los cuadros más pequeños */
+  border: none;
+  margin-bottom: 10px; /* Reducir el margen inferior para compactar más */
+  background-color: #252a2e;
+  color: #fff;
+  font-size: 14px; /* Reducir el tamaño de la fuente si es necesario */
+  /* Agrega el resplandor */
+  box-shadow: 0 0 3px #4169e1;
+}
+
+.contacto button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.contacto button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #4169e1;
+  z-index: -1;
+  transition: 0.2s;
+}
+.contacto button:hover .overlay {
+  width: 100%;
+}
+.contacto .col img {
+  width: 80%;
+}
+/*Footer*/
+.footer {
+  background-color: #131517;
+  color: #fff;
+  font-size: 10px;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre las columnas */
+}
+
+.footer .copyright p {
+  margin: 20px 100px;
+  width: calc(
+    33.33% - 10px
+  ); /* Ancho de cada columna, restando el espacio entre ellas */
+  margin-right: 10px; /* Espacio entre las columnas */
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 900px) {
+  /* Ocultar el menú de navegación principal en pantallas pequeñas */
+  nav {
+    display: none;
+  }
+  /* Mostrar el icono del menú en pantallas pequeñas */
+  .nav-responsive {
+    display: block;
+  }
+  /* Ajustar el estilo del menú desplegable */
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
+  }
+  nav.responsive ul {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .galeria-video {
+    display: block; /* Cambia el display a bloque para que los videos aparezcan uno debajo del otro */
+    text-align: center; /* Centra los videos en la pantalla */
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  }
+
+  .video-container {
+    width: 100%; /* Opcional: haz que el contenedor de video ocupe todo el ancho disponible */
+    margin: 5px auto; /* Centra el contenedor de video */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Ajustes para la sección de contacto */
+  .contacto .fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto .col {
+    width: 80%;
+    text-align: center;
+  }
+
+  .contacto .col input,
+  .contacto .col textarea {
+    width: 100%;
+  }
+
+  .contacto .col button {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Ajustes adicionales para pantallas más pequeñas */
+  .footer {
+    text-align: center;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  /* Ocultar completamente el pie de página en pantallas muy pequeñas */
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  
+  .inicio .contenido-banner{
+    scale: 90%;
+    margin-top: 100px;
+  }
+}
+

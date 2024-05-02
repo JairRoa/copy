@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+
+    background-color: #0c315d;
+    font-family: 'Alata', sans-serif;
+}
+  
+h1 {
+    position: absolute; /* Establecer posición absoluta */
+    top: -60px; /* Ajustar la posición superior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    color: #e1d941; /* Color amarillo para el texto */
+    font-size: 96px; /* Tamaño del texto */
+    text-align: center; /* Centrar el texto horizontalmente */
+    padding: 10px; /* Añadir relleno */
+    white-space: nowrap; /* Evitar el salto de línea */
+    display: inline-block; /* Mostrar en una sola línea */
+  }
+a{
+    position: absolute; /* Establecer posición absoluta */
+    top: 450px; /* Ajustar la posición superior */
+    left: 5%; /* Centrar horizontalmente */
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+a:hover{
+    color: #4169e1;
+}
+
+.fondo img{
+  margin-top: 80px;
+  margin-left: 400px;
+}
+/* Estilos para pantallas de 700px o menos */
+@media (max-width: 700px) {
+    body {
+      margin-top: 900px; /* Reducir el margen superior para pantallas más pequeñas */
+      background-size: 100%;
+      overflow-x: hidden;
+    }
+  
+    h1 {
+        font-size: 40px; /* Reducir el tamaño del texto para pantallas más pequeñas */
+        padding: 5px; /* Reducir el relleno para pantallas más pequeñas */
+        top: 10px; /* Ajustar la posición superior */
+        white-space: normal; /* Permitir saltos de línea para mostrar el título en dos líneas */
+      }
+      a{
+        position: absolute; /* Establecer posición absoluta */
+        top: 680px; /* Ajustar la posición superior */
+        left: 25%; /* Centrar horizontalmente */
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+    }
+    .fondo img{
+      scale: 50%;
+      margin-top: -990px;
+      margin-left: -300px;
+    }
+  }

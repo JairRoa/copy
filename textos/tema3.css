@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Alata", sans-serif;
+  overflow-x: hidden;
+}
+.banner {
+  margin-bottom: -143px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Asegura que el banner esté por encima de otras secciones */
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0px;
+  height: auto;
+  object-fit: cover;
+}
+
+.first {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(../img/temas/web.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh; /* Cambiado a min-height para asegurar que la sección 2 ocupe al menos toda la altura de la pantalla */
+  color: #fff;
+  display: flex; /* Agregado display flex para que el contenido se alinee verticalmente */
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  align-items: center;
+  justify-content: space-between;
+}
+/* Estilos para la imagen */
+.first img {
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  max-width: 300px; /* Tamaño máximo de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 20px; /* Margen derecho para separar la imagen del texto */
+}
+/* Estilos para el texto */
+.first p {
+  max-width: 90%; /* Ancho máximo del texto */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+.second {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(../img/social-media.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh; /* Cambiado a min-height para asegurar que la sección 2 ocupe al menos toda la altura de la pantalla */
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flujo a vertical */
+  margin-bottom: 50px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.second p {
+  max-width: 90%; /* Ancho máximo del texto */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+h1 {
+  margin-top: 20px;
+  margin: 40px;
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+h2,
+h3 {
+  color: #ffffff;
+  margin: 40px;
+  font-size: 35px;
+}
+
+.first p1,
+p2,
+p3,
+p4,
+p5,
+p6 {
+  margin: 40px;
+  text-align: justify;
+  font-size: 30px;
+}
+
+.second p1 {
+  margin: 40px;
+  text-align: justify;
+  font-size: 30px;
+}
+
+.enlace-web {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.enlace-web:hover {
+  color: #4169e1;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.first img {
+  margin: 40px;
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.second img {
+  margin: 40px;
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+.testimonies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.test h2 {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.testimony {
+  flex: 0 1 calc(33.33% - 10px); /* Ancho dividido entre 3 con espacio entre ellos */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Ancho máximo de 400px para evitar que se extiendan demasiado en pantallas grandes */
+  text-align: center;
+  backdrop-filter: blur(20px); /* Aplica un desenfoque del 50% */
+  -webkit-backdrop-filter: blur(5px); /* Prefijo para navegadores webkit */
+  flex-basis: 100%; /* Ocupa todo el ancho */
+  align-items: center;
+}
+.testimony:hover {
+  background-color: #4169e1; /* Cambia el color de fondo al pasar el mouse */
+  color: #ffffff;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.testimony .user-image {
+  width: 200px; /* Ancho fijo */
+  height: 200px; /* Alto fijo */
+  background-color: #0a41a7; /* Color de fondo temporal para la imagen de usuario */
+  border-radius: 50%; /* Hace que la imagen sea completamente circular */
+  margin: 0 auto 10px; /* Centra la imagen y agrega espacio entre la imagen y el texto */
+  object-fit: cover; /* Ajusta la imagen para cubrir el tamaño del contenedor */
+}
+
+.text {
+  overflow: hidden;
+}
+
+.user {
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 0 100px;
+  font-size: 28px;
+  background-color: #222222;
+  color: #ffffff;
+  margin-top: -50px;
+}
+
+footer p8 {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 20px 20px;
+}
+
+.button {
+  font-size: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  padding: auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  margin: 10px 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+button a {
+  color: inherit; /* Hereda el color del texto del botón */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+button:hover {
+  background-color: #4169e1;
+}
+
+.volver {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+.volver a {
+  font-size: 40px;
+  margin: 60px 50px;
+  text-decoration: none;
+  color: #fff;
+}
+.volver a:hover{
+  color: #4169e1;
+}
+/*===========================PANTALLAS PEQUEÑAS=========================================*/
+
+
+
+/* Media query para pantallas de menos de 700px */
+@media screen and (max-width: 700px) {
+  .banner img {
+    display: block;
+    width: 100%;
+    max-height: 100px;
+    margin-top: 10px;
+    object-fit: contain; /* Ajusta la imagen para que quepa completamente sin recortes */
+  }
+  h1 {
+    font-size: 40px;
+    margin-top: 100px; /* Ajusta el margen superior */
+    text-align: center; /* Centra el texto */
+    max-width: 80%; /* Limita el ancho del título */
+    white-space: normal;
+  }
+  .first img {
+    width: 100vw;
+  }
+
+  .second img {
+    width: 100vw;
+  }
+  .first p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6 {
+    margin: 40px;
+    text-align: justify;
+    font-size: 5vw;
+  }
+  .second p1,
+  p2,
+  p3 {
+    margin: 40px;
+    text-align: justify;
+    font-size: 4vw;
+  }
+
+  .test h2{
+    font-size: 5vw;
+    margin: 0;
+  }
+  
+  section .test h2 {
+    margin-top: 40px; /* Aumenta el margen superior del título H2 en pantallas pequeñas */
+    text-align: center;
+  }
+  footer p8 {
+    font-size: 22px;
+  }
+  .button {
+    padding: 20px;
+  }
+  button {
+    margin: 20px 10px;
+    margin-top: -500px;
+  }
+
+  .volver {
+    margin-bottom: -50px;
+  }
+  .volver p {
+    font-size: 20px;
+  }
+  .volver p i {
+    font-size: 22px;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 963px) {
+  .testimonies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente los contenedores */
+    align-items: center; /* Centra verticalmente los contenedores */
+    margin-top: 30px; /* Ajusta el espacio entre el título y las tarjetas */
+  }
+
+  .testimony {
+    flex-basis: 100%; /* Ocupa todo el ancho */
+    max-width: none; /* Restablece el ancho máximo en pantallas pequeñas */
+    margin: 20px; /* Ajusta el margen entre los contenedores */
+    padding: 20px; /* Ajusta el relleno dentro de los contenedores */
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(20px); /* Aplica un desenfoque del 50% */
+    -webkit-backdrop-filter: blur(5px); /* Prefijo para navegadores webkit */
+  }
+}
