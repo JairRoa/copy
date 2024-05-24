@@ -739,23 +739,24 @@ button:hover .overlay {
   color: #4169e1;
 }
 
-/* FOTOS */
+
+/*========== FOTO ==========*/
 .container {
-  width: 70%; /* Cambiado para ocupar todo el ancho disponible */
-  height: auto; /* Altura automática para mantener la proporción */
+  width: 100%;
+  height: auto;
   margin: auto;
   overflow: hidden;
 }
 .container .slide-track {
   display: flex;
-  animation: scroll 15s linear infinite; /* Cambiado para moverse más rápido */
-  width: 100%;
+  animation: scroll 20s linear infinite; /* Ajustado para moverse suavemente */
+  width: 200%; /* Duplicado para mostrar todas las imágenes */
   transform: translateX(0);
 }
 .container .slide {
-  flex: 0 0 calc(25% - 5px); /* Ajustado para ocupar la cuarta parte del ancho del contenedor */
-  height: auto;
-  margin-right: 5px; /* Añadido un pequeño margen entre los slides */
+  flex: 0 0 auto;
+  height: 200px;
+  margin-right: 5px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -768,11 +769,18 @@ button:hover .overlay {
 /* Media query para dispositivos con una pantalla de máximo 700px */
 @media (max-width: 700px) {
   .container .slide {
-    flex: 0 0 calc(50% - 10px); /* Ajustado para ocupar la mitad del ancho del contenedor con margen */
-    margin-right: 10px; /* Añadido margen para separar los slides */
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 10px;
   }
   .container .slide-track {
-    animation: scroll 15s linear infinite; /* Cambiado para moverse más rápido en pantallas pequeñas */
+    animation: scroll 15s linear infinite; /* Ajustado para moverse suavemente */
+  }
+  .container .slide {
+    flex: 0 0 auto;
+    height: 120px;
+    margin-right: 5px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
 
@@ -781,17 +789,11 @@ button:hover .overlay {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Ajustado para moverse suavemente */
   }
 }
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-  }
-}
+
+
 
 /*contacto*/
 .contacto {

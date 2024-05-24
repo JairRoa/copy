@@ -1,41 +1,39 @@
 //menu hamburgueda
 let MenuVisible = false;
 
-function mostrarOcultarMenu(){
-    if(MenuVisible){
-        document.getElementById("nav").classList ="";
-        MenuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        MenuVisible = true;
-    }
+function mostrarOcultarMenu() {
+  if (MenuVisible) {
+    document.getElementById("nav").classList = "";
+    MenuVisible = false;
+  } else {
+    document.getElementById("nav").classList = "responsive";
+    MenuVisible = true;
+  }
 }
 
-function seleccionar(){
-    document.getElementById("nav").classList ="";
-    MenuVisible = false;
+function seleccionar() {
+  document.getElementById("nav").classList = "";
+  MenuVisible = false;
 }
 
 //ANIMACION BARRA HABILIDADES
 
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distanciaSkills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("edicion");
-        habilidades[1].classList.add("javascript");
-        habilidades[2].classList.add("copy");
-        habilidades[3].classList.add("equipo");
-        habilidades[4].classList.add("innovacion");
-        habilidades[5].classList.add("atencion");
-    }
+function efectoHabilidades() {
+  var skills = document.getElementById("skills");
+  var distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
+  if (distanciaSkills >= 300) {
+    let habilidades = document.getElementsByClassName("progreso");
+    habilidades[0].classList.add("edicion");
+    habilidades[1].classList.add("javascript");
+    habilidades[2].classList.add("copy");
+    habilidades[3].classList.add("equipo");
+    habilidades[4].classList.add("innovacion");
+    habilidades[5].classList.add("atencion");
+  }
 }
-window.onscroll = function (){
-    efectoHabilidades();
-} 
-
-  
+window.onscroll = function () {
+  efectoHabilidades();
+};
 
 //navegar entre pestañas
 
@@ -50,25 +48,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth", // Animación suave
     });
   });
-});
-
-var video = document.getElementById("video");
-var playButton = document.querySelector(".play-button");
-
-video.addEventListener("play", function () {
-  playButton.style.opacity = 0; // Oculta el botón cuando el video se está reproduciendo
-});
-
-video.addEventListener("pause", function () {
-  playButton.style.opacity = 1; // Muestra el botón cuando el video se pausa
-});
-
-playButton.addEventListener("click", function () {
-  if (video.paused) {
-    video.play();
-  } else {
-    video.pause();
-  }
 });
 
 //VIDEO
@@ -94,4 +73,3 @@ function toggleVideo(videoId) {
     }
   }
 }
-
