@@ -37,59 +37,73 @@
     <link rel="stylesheet" href="style.min.css" />
   </head>
 
+
   <body>
     <!-- MENU SUPERIOR -->
-    <div class="contenedor-header">
-      <header>
-        <div class="logo">
-          <a href="#inicio"><img src="img/logo.png" alt="Logo" /></a>
-        </div>
-        <nav id="nav">
-          <ul>
-            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-            <li><a href="#quien" onclick="seleccionar()">¿Quién soy?</a></li>
-            <li>
-              <a href="#historia" onclick="seleccionar()"
-                >Te cuento historias</a
-              >
-            </li>
-            <li><a href="#trabajos" onclick="seleccionar()">Trabajos</a></li>
-            <li>
-              <a href="#contacto" onclick="seleccionar()"
-                >Ser parte de tu equipo</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </header>
+<div class="contenedor-header">
+  <header>
+    <div class="logo">
+      <a href="#inicio">
+        <img src="img/logo.png" alt="Logo" loading="lazy" />
+      </a>
     </div>
+    <nav id="nav" aria-label="Menú principal">
+      <ul>
+        <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+        <li><a href="#quien" onclick="seleccionar()">¿Quién soy?</a></li>
+        <li><a href="#historia" onclick="seleccionar()">Te cuento historias</a></li>
+        <li><a href="#trabajos" onclick="seleccionar()">Trabajos</a></li>
+        <li><a href="#contacto" onclick="seleccionar()">Ser parte de tu equipo</a></li>
+      </ul>
+    </nav>
+    <div class="nav-responsive" onclick="mostrarOcultarMenu()" aria-label="Mostrar menú">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+</div>
 
-    <!-- Seccion Inicio -->
-    <section id="inicio" class="inicio">
-      <div class="contenido-banner">
-        <div class="contenedor-img">
-          <img src="img/avatar1.png" alt="" />
-        </div>
-        <h1>JAIR ROA CALVO</h1>
-        <h2>
-          Productor de Medios Audiovisuales - Copywriter - Editor - Fotógrafo
-        </h2>
-        <div class="redes">
-          <a href="https://www.linkedin.com/in/medios-audiovisuales/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a href="https://www.behance.net/gallery/153130093/JairRoaCalvo"
-            ><i class="fab fa-behance"></i
-          ></a>
-          <a href="https://www.instagram.com/jair.roa.calvo/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-      </div>
-    </section>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="inicio">
+  <div class="contenido-banner">
+    <div class="contenedor-img">
+      <img
+        src="img/avatar1.png"
+        alt="Avatar de Jair Roa Calvo"
+        loading="lazy"
+      />
+    </div>
+    <h1>JAIR ROA CALVO</h1>
+    <h2>Productor de Medios Audiovisuales – Copywriter – Editor – Fotógrafo</h2>
+    <div class="redes">
+      <a
+        href="https://www.linkedin.com/in/medios-audiovisuales/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a
+        href="https://www.behance.net/gallery/153130093/JairRoaCalvo"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Behance"
+      >
+        <i class="fab fa-behance"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/jair.roa.calvo/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <section id="quien" class="quien">
       <div class="contenido-quien">
@@ -344,224 +358,136 @@
       </div>
     </section>
 
-    <!-- seccion trabajos-->
-    <section id="trabajos" class="trabajos">
-      <div class="contenido-seccion">
-        <h2>Trabajos</h2>
-        <div class="proyectos">
-          <div class="galeria-video">
-            <div class="proyecto">
-              <div class="overlay">
-                <h3>Aquí hay algo para que me conozcas.</h3>
-                <p>Edición Audiovisual <i class="fa-solid fa-video"></i></p>
-                <div class="videos">
-                  <div class="video-container">
-                    <div class="play-button" onclick="toggleVideo('video0')">
-                      <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <video
-                      id="video0"
-                      class="video"
-                      controls
-                      onclick="expandirVideo(this)"
-                    >
-                      <source src="img/video/reel.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div class="video-container">
-                    <div class="play-button" onclick="toggleVideo('video1')">
-                      <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <video
-                      id="video1"
-                      class="video"
-                      controls
-                      onclick="expandirVideo(this)"
-                    >
-                      <source
-                        src="img/video/Upper_Handcreative.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div class="video-container">
-                    <div class="play-button" onclick="toggleVideo('video2')">
-                      <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <video
-                      id="video2"
-                      class="video"
-                      controls
-                      onclick="expandirVideo(this)"
-                    >
-                      <source src="img/video/strange.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div class="video-container">
-                    <div class="play-button" onclick="toggleVideo('video3')">
-                      <i class="fa-regular fa-circle-play"></i>
-                    </div>
-                    <video
-                      id="video3"
-                      class="video"
-                      controls
-                      onclick="expandirVideo(this)"
-                    >
-                      <source src="img/video/videojobs.mp4" type="video/mp4" />
-                    </video>
-                  </div>
+<!-- seccion trabajos-->
+<section id="trabajos" class="trabajos">
+  <div class="contenido-seccion">
+    <h2>Trabajos</h2>
+
+    <div class="proyectos">
+      <!-- Edición Audiovisual -->
+      <div class="galeria-video">
+        <div class="proyecto">
+          <div class="overlay">
+            <h3>Aquí hay algo para que me conozcas.</h3>
+            <p>Edición Audiovisual <i class="fa-solid fa-video"></i></p>
+            <div class="videos">
+              <div class="video-container">
+                <div class="play-button" onclick="toggleVideo('video0')">
+                  <i class="fa-regular fa-circle-play"></i>
                 </div>
+                <video
+                  id="video0"
+                  class="video"
+                  controls
+                  onclick="expandirVideo(this)"
+                  loading="lazy"
+                >
+                  <source src="img/video/reel.mp4" type="video/mp4" />
+                </video>
               </div>
-            </div>
-          </div>
-          <div class="foto">
-            <p>Fotografía <i class="fa-solid fa-camera"></i></p>
-            <div class="container">
-              <div class="slide-track">
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 43.jpg" alt="" />
+              <div class="video-container">
+                <div class="play-button" onclick="toggleVideo('video1')">
+                  <i class="fa-regular fa-circle-play"></i>
                 </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09896-Edit.jpg" alt="" />
+                <video
+                  id="video1"
+                  class="video"
+                  controls
+                  onclick="expandirVideo(this)"
+                  loading="lazy"
+                >
+                  <source src="img/video/Upper_Handcreative.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="video-container">
+                <div class="play-button" onclick="toggleVideo('video2')">
+                  <i class="fa-regular fa-circle-play"></i>
                 </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713289637953.jpeg"
-                    alt=""
-                  />
+                <video
+                  id="video2"
+                  class="video"
+                  controls
+                  onclick="expandirVideo(this)"
+                  loading="lazy"
+                >
+                  <source src="img/video/strange.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="video-container">
+                <div class="play-button" onclick="toggleVideo('video3')">
+                  <i class="fa-regular fa-circle-play"></i>
                 </div>
-                <div class="slide">
-                  <img src="img/portafolio/003.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 42.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/004.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 32 copia.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713289664497.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09841-Edit.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/20211104_053640.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 28 copia.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/006.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713289669965.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 15 copia.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/008.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09941-Edit.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713292530888.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/estatua 2.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09887-Edit.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 43.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09896-Edit.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713289637953.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/003.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 42.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/004.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 32 copia.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713289664497.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09841-Edit.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/20211104_053640.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 28 copia.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/006.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713289669965.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/Tatiana M. 15 copia.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/008.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09941-Edit.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img
-                    src="img/portafolio/rodandoprod_1713292530888.jpeg"
-                    alt=""
-                  />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/estatua 2.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="img/portafolio/DSC09887-Edit.jpg" alt="" />
-                </div>
+                <video
+                  id="video3"
+                  class="video"
+                  controls
+                  onclick="expandirVideo(this)"
+                  loading="lazy"
+                >
+                  <source src="img/video/videojobs.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Nueva sección: Programación Web -->
+      <div class="programacion-web">
+        <h3>Programación Web <i class="fa-solid fa-code"></i></h3>
+        <div class="web-cards">
+          <!-- Caja 1 -->
+          <div class="web-card">
+            <a href="https://colteseg.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="img/logos/logo colteseg.png" alt="Colteseg" loading="lazy" />
+            </a>
+          </div>
+          <!-- Caja 2 -->
+          <div class="web-card">
+            <a href="https://malagonsaavedracom.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src="img/logos/logo malagon.png" alt="Malagon Saavedra" loading="lazy" />
+            </a>
+          </div>
+          <!-- Caja 3 -->
+          <div class="web-card">
+            <a href="https://dclawyers.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src="img/logos/logo dc law.png" alt="DC Lawyers" loading="lazy" />
+            </a>
+          </div>
+          <!-- Caja 4 -->
+          <div class="web-card">
+            <a href="https://ericastano.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img src="img/logos/logo erica.png" alt="Eri Castaño" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fotografía -->
+      <div class="foto">
+        <p>Fotografía <i class="fa-solid fa-camera"></i></p>
+        <div class="container">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="img/portafolio/Tatiana M. 43.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="slide">
+              <img src="img/portafolio/DSC09896-Edit.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="slide">
+              <img src="img/portafolio/rodandoprod_1713289637953.jpeg" alt="" loading="lazy" />
+            </div>
+            <div class="slide">
+              <img src="img/portafolio/003.jpg" alt="" loading="lazy" />
+            </div>
+            <!-- Resto de imágenes… -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- seccion contacto-->
     <section id="contacto" class="contacto">

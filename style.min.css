@@ -739,6 +739,78 @@ button:hover .overlay {
   color: #4169e1;
 }
 
+/* Contenedor de tarjetas web */
+.programacion-web {
+  margin-top: 40px;
+}
+
+.programacion-web h3 {
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.programacion-web h3 i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.web-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.web-card {
+  background-color: #252a2e;
+  border-radius: 8px;
+  width: calc(25% - 20px); /* 4 cajas en una fila con espacio */
+  min-width: 200px;
+  max-width: 250px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.web-card img {
+  width: 50%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.web-card:hover {
+  background-color: #4169e1;
+  transform: translateY(-5px);
+}
+
+.web-card:hover img {
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .web-card {
+    width: calc(50% - 20px); /* 2 cajas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 600px) {
+  .web-card {
+    width: 100%; /* 1 caja por fila en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
 
 /*========== FOTO ==========*/
 .container {
