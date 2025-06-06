@@ -739,7 +739,9 @@ button:hover .overlay {
   color: #4169e1;
 }
 
-/* Contenedor de tarjetas web */
+
+/*========== PROGRAMACION WEB ==========*/
+
 .programacion-web {
   margin-top: 40px;
 }
@@ -807,63 +809,125 @@ button:hover .overlay {
 }
 
 
-
-
-
-
-
 /*========== FOTO ==========*/
-.container {
+/* Variables para controlar la animación */
+:root {
+  --slide-gap: 10px;                /* Espacio entre slides */
+  --animation-duration-desktop: 30s;  /* Aumenta velocidad reduciendo duración */
+  --animation-duration-md: 25s;       /* Pantallas medianas */
+  --animation-duration-sm: 10s;       /* Móviles */
+  --animation-duration-xs: 8s;        /* Móviles muy pequeños */
+}
+
+/* Contenedor de la sección de foto */
+.foto {
+  padding: 40px 0;
+  background-color: #252a2e;
+  color: #fff;
+  text-align: center;
+}
+
+.foto p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Contenedor visible del carrusel */
+.carousel-container {
   width: 100%;
-  height: auto;
-  margin: auto;
   overflow: hidden;
+  position: relative;
 }
-.container .slide-track {
+
+/* Pista que contiene las imágenes y su duplicado */
+.slide-track {
   display: flex;
-  animation: scroll 20s linear infinite; /* Ajustado para moverse suavemente */
-  width: 200%; /* Duplicado para mostrar todas las imágenes */
-  transform: translateX(0);
+  gap: var(--slide-gap);
+  align-items: center;
+  width: 200%; /* Duplicamos las imágenes para el bucle infinito */
+  animation: scroll var(--animation-duration-desktop) linear infinite;
 }
-.container .slide {
+
+/* Duplicamos el contenido para efecto infinito */
+.slide-track::before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+/* Cada “slide” */
+.slide {
   flex: 0 0 auto;
   height: 200px;
-  margin-right: 5px;
   border-radius: 10px;
   overflow: hidden;
+  background-color: #111;
 }
-.container .slide img {
-  width: 100%;
-  height: 100%;
+
+.slide img {
+  display: block;
+  width: auto;      /* Ancho de imagen autónomo */
+  height: 100%;     /* Altura fija según slide */
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Media query para dispositivos con una pantalla de máximo 700px */
-@media (max-width: 700px) {
-  .container .slide {
-    flex: 0 0 calc(50% - 10px);
-    margin-right: 10px;
-  }
-  .container .slide-track {
-    animation: scroll 15s linear infinite; /* Ajustado para moverse suavemente */
-  }
-  .container .slide {
-    flex: 0 0 auto;
-    height: 120px;
-    margin-right: 5px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+/* Efecto hover sobre la imagen */
+.slide img:hover {
+  transform: scale(1.05);
 }
 
+/* Pausar animación al pasar el cursor */
+.carousel-container:hover .slide-track {
+  animation-play-state: paused;
+}
+
+/* Animación keyframes: desplazamiento hacia la izquierda al 50% del contenedor */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Ajustado para moverse suavemente */
+    transform: translateX(-50%);
   }
 }
+
+/* =============================
+   LAYOUT RESPONSIVE
+   ============================= */
+/* Pantallas medianas (hasta 1024px): Duración ajustada */
+@media (max-width: 1024px) {
+  .slide-track {
+    animation-duration: var(--animation-duration-md);
+  }
+  .slide {
+    height: 160px;
+  }
+}
+
+/* En móviles (hasta 600px): Duración más rápida */
+@media (max-width: 600px) {
+  .slide-track {
+    animation-duration: var(--animation-duration-sm);
+  }
+  .slide {
+    height: 120px;
+  }
+}
+
+/* En móviles muy pequeños (hasta 400px): Ajuste final */
+@media (max-width: 400px) {
+  .slide-track {
+    animation-duration: var(--animation-duration-xs);
+  }
+  .slide {
+    height: 100px;
+  }
+}
+
 
 
 
